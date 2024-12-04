@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pinwheel-tailwind</title>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="imgs/favicon.png" />
-    <!-- FontGoogle -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinwheel-tailwind</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="imgs/favicon.png" />
+  <!-- FontGoogle -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- FontAwesome -->
+  <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="index.css" />
-    <!-- Link JS -->
-    <link rel="stylesheet" href="index.js" />
-  </head>
-  <body>
-    <!-- Header -->
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- Link JS -->
+  <link rel="stylesheet" href="index.js" />
+</head>
+
+<body>
+  <!-- Header -->
     <div class="header sticky z-10 bg-white py-6">
       <div class="container flex justify-between items-center">
         <img src="imgs/logo.svg" alt="Logo" />
@@ -48,138 +50,138 @@
         <a href="#" class="text-gray-400">Pages</a>
         <a href="#" class="text-gray-400">Contact</a>
       </nav>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner relative py-16">
+    <div class="container">
+      <div class="banner__content sticky z-10 lg:col-6">
+        <h1 class="text-4xl font-bold">
+          Scale design & dev operations with Avocode Enterprise
+        </h1>
+        <p class="mt-6">
+          A fully integrated suite of authentication & authoriz products,
+          Stytch’s platform removes the headache of.
+        </p>
+        <a class="btn btn-white mt-8" href="">Download The Theme</a>
+      </div>
+      <div class="banner_img">
+        <img class="w-full object-contain" src="imgs/banner-img.png" alt="" />
       </div>
     </div>
-
-    <!-- Banner -->
-    <div class="banner relative py-16">
-      <div class="container">
-        <div class="banner__content sticky z-10 lg:col-6">
-          <h1 class="text-4xl font-bold">
-            Scale design & dev operations with Avocode Enterprise
-          </h1>
-          <p class="mt-6">
-            A fully integrated suite of authentication & authoriz products,
-            Stytch’s platform removes the headache of.
-          </p>
-          <a class="btn btn-white mt-8" href="">Download The Theme</a>
-        </div>
-        <div class="banner_img">
-          <img class="w-full object-contain" src="imgs/banner-img.png" alt="" />
-        </div>
-      </div>
       <img
         class="-top-28 right-0 w-full max-w-[30%] absolute z-1"
         src="imgs/banner-shape.svg"
         alt=""
       />
-    </div>
+  </div>
 
-    <!-- Feature -->
-    <div class="feature py-16 relative">
-      <img class="absolute left-0 top-0 -translate-y-1/2" src="imgs/icons/feature-shape.svg" alt="">
-      <div class="container p-0">
-        <div class="feature__content text-center">
-          <h2 class="text-3xl font-bold">The Highlighting Part Of Our Solution</h2>
-          <p class="mt-6">
+  <!-- Feature -->
+  <div class="feature py-16 relative">
+    <img class="absolute left-0 top-0 -translate-y-1/2" src="imgs/icons/feature-shape.svg" alt="">
+    <div class="container p-0">
+      <div class="feature__content text-center">
+        <h2 class="text-3xl font-bold">The Highlighting Part Of Our Solution</h2>
+        <p class="mt-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin .
-          </p>
-        </div>
-        <div class="feature__list grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 mt-12 ">
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Live Caption</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-1.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Smart Reply</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-2.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Sound Amplifier</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-3.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Gesture Navigation</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-4.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Dark Theme</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-5.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Privacy Controls</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-6.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Location Controls</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-7.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Security Updates</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-8.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Focus Mode</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-9.svg" />
-            </span>
-          </div>
-          <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
-            <h3 class="text-xl font-bold">Family Link</h3>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </p>
-            <span class="icon mt-4">
-              <img class="object-contain" src="imgs/icons/feature-icon-10.svg" />
-            </span>
-          </div>
-          
-          
-        </div>
+        </p>
       </div>
+      <div class="feature__list grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 mt-12 ">
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Live Caption</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-1.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Smart Reply</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-2.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Sound Amplifier</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-3.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Gesture Navigation</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-4.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Dark Theme</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-5.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Privacy Controls</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-6.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Location Controls</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-7.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Security Updates</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-8.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Focus Mode</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-9.svg" />
+          </span>
+        </div>
+        <div class="feature__item flex flex-col justify-between rounded-lg shadow-lg bg-white p-5">
+          <h3 class="text-xl font-bold">Family Link</h3>
+          <p class="mt-4 text-sm">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <span class="icon mt-4">
+            <img class="object-contain" src="imgs/icons/feature-icon-10.svg" />
+          </span>
+        </div>
+
+
+      </div>
+    </div>
 
     <!-- jquery -->
     <script
@@ -188,5 +190,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-  </body>
+</body>
 </html>
