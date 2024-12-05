@@ -32,7 +32,9 @@
 
   <body>
     <!-- Header -->
-    <div class="header relative z-10 bg-white py-6">
+    <div
+      class="header relative z-10 bg-white py-6 lg:bg-transparent transition-all duration-300"
+    >
       <div class="container flex flex-wrap justify-between items-center">
         <img src="imgs/logo.svg" alt="Logo" />
         <!-- Mobile -->
@@ -42,18 +44,41 @@
         ></i>
         <!-- Desktop -->
         <nav
-          class="navbar w-full hidden lg:flex lg:w-auto lg:justify-center space-x-5"
+          class="navbar w-full hidden lg:flex lg:w-auto lg:justify-center space-x-8 text-black"
         >
           <a href="#" class="nav__item">Home</a>
           <a href="#" class="nav__item">About</a>
           <a href="#" class="nav__item">Blog</a>
           <a href="#" class="nav__item">Features</a>
           <a href="#" class="nav__item">How It Work</a>
-          <a href="#" class="nav__item">Pages</a>
+          <a href="#" class="nav__item group relative">
+            <span>Pages <i class="fa fa-angle-down"></i></span>
+            <ul
+              class="dropdown__list hidden group-hover:block lg:visible lg:absolute lg:block lg:opacity-0 lg:group-hover:block lg:group-hover:opacity-100 lg:bg-white lg:shadow-lg lg:rounded-lg mt-2 z-auto transition-all duration-300 w"
+            >
+              <li class="dropdown__item text-black pl-4 pr-24 pt-4">Career</li>
+              <li class="dropdown__item text-black pl-4 pr-20 pt-2">
+                Career Single
+              </li>
+              <li class="dropdown__item text-black pl-4 pr-24 pt-2">
+                Integrations
+              </li>
+              <li class="dropdown__item text-black pl-4 pr-10 pt-2">
+                Integration Single
+              </li>
+              <li class="dropdown__item text-black pl-4 pr-24 pt-2">Pricing</li>
+              <li class="dropdown__item text-black pl-4 pr-24 pt-2">
+                Changelogs
+              </li>
+              <li class="dropdown__item text-black pl-4 pr-8 pb-4 pt-2">
+                Terms & Conditions
+              </li>
+            </ul></a
+          >
           <a href="#" class="nav__item">Contact</a>
         </nav>
         <span class="items-center hidden lg:flex"
-          ><a class="btn btn-white" href="">Sign Up Now</a></span
+          ><a class="btn btn-white h-10 py-0" href="">Sign Up Now</a></span
         >
       </div>
     </div>
