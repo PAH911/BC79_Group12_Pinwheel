@@ -33,7 +33,7 @@
   <body>
     <!-- Header -->
     <div
-      class="header relative z-10 bg-white py-6 lg:bg-transparent transition-all duration-300"
+      class="header relative z-10 bg-white py-6 lg:bg-transparent transition-all duration-300 lg:mx-40"
     >
       <div class="container flex flex-wrap justify-between items-center">
         <img src="imgs/logo.svg" alt="Logo" />
@@ -78,16 +78,16 @@
           <a href="#" class="nav__item">Contact</a>
         </nav>
         <span class="items-center hidden lg:flex"
-          ><a class="btn btn-white h-10 py-0" href="">Sign Up Now</a></span
+          ><a class="btn btn-white h-10 py-0" href="#">Sign Up Now</a></span
         >
       </div>
     </div>
 
     <!-- Banner -->
     <div class="banner relative py-16">
-      <div class="container">
-        <div class="banner__content sticky z-10 lg:col-6">
-          <h1 class="text-4xl font-bold">
+      <div class="container lg:flex items-center">
+        <div class="banner__content sticky z-10 lg:col-6 lg:m-20">
+          <h1 class="text-5xl font-bold">
             Scale design & dev operations with Avocode Enterprise
           </h1>
           <p class="mt-6">
@@ -96,7 +96,7 @@
           </p>
           <a class="btn btn-white mt-8" href="">Download The Theme</a>
         </div>
-        <div class="banner_img">
+        <div class="banner_img z-10 w-full">
           <img class="w-full object-contain" src="imgs/banner-img.png" alt="" />
         </div>
       </div>
@@ -114,12 +114,15 @@
         src="imgs/icons/feature-shape.svg"
         alt=""
       />
-      <div class="container p-0">
-        <div class="feature__content text-center">
-          <h2 class="text-3xl font-bold">
+      <div class="container p-0 lg:px-4">
+        <div
+          class="feature__content text-center lg:flex justify-between lg:text-start"
+        >
+          <h2 class="text-4xl font-bold lg:w-1/3">
             The Highlighting Part Of Our Solution
           </h2>
-          <p class="mt-6">
+          <!-- <div class="w-1/3"></div> -->
+          <p class="mt-6 lg:w-1/3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             egestas Werat viverra id et aliquet. vulputate egestas sollicitudin
             .
