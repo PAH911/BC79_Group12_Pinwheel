@@ -184,9 +184,11 @@ button {
 }
 .playicon{
   display: inline-block;
-  background-color: red; /* Màu nền đỏ */
-  padding: 12px 20px; /* Khoảng cách giữa viền và hình ảnh */
-  border-radius: 8px;
+  background-color: red;
+  padding: 12px 20px; 
+  border-radius: 10px;
+  
+  
 }
 .playicon img{
   height: 20px;
