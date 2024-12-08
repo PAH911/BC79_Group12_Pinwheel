@@ -179,48 +179,100 @@ ul {
   overflow: hidden;
   border-radius: 16px;
 }
-button {
-  text-transform: none;
-}
-.playicon{
-  display: inline-block;
-  background-color: red;
-  padding: 12px 20px; 
-  border-radius: 10px;
-  
-  
-}
-.playicon img{
-  height: 20px;
-  width: 20px;
-}
+
 .video-thumbnail {
   position: relative;
 }
+
 .video-play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
-  display: flex;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Đảm bảo nút nằm trên video */
+  background-color: red; /* Màu nền của nút */
+  border-radius: 50%; /* Nút hình tròn */
+  width: 60px; /* Kích thước nút */
+  height: 60px;
+  cursor: pointer; /* Con trỏ dạng "pointer" khi di chuột qua nút */
 }
+
+.video-play-btn img {
+  width: 24px; /* Kích thước icon play */
+  height: 24px;
+}
+
 .video-play-btn::after {
+  content: ""; /* Tạo hiệu ứng xung quanh nút */
   position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 9999px;
-  --tw-content: "";
-  content: var(--tw-content);
+  height: 100%;
+  border-radius: 50%;
   animation: shadow-pulse-2 1.4s infinite;
+}
+
+@keyframes shadow-pulse-2 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px 15px rgba(255, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section.services {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .video-play-btn {
+    width: 50px; 
+    height: 50px;
+  }
+  .video-play-btn img {
+    width: 20px; 
+    height: 20px;
+  }
 }
 
 @media (max-width: 768px) {
   .video-play-btn {
-    height: 60px;
-    width: 60px; /* Giảm kích thước nút play trên màn hình nhỏ */
+    width: 40px; 
+    height: 40px;
+  }
+  .video-play-btn img {
+    width: 16px;
+    height: 16px;
   }
 }
+
+
 
 
